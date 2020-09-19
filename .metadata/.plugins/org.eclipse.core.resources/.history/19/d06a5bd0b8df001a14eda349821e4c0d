@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Mtc 
+{
+
+	public static void main(String[] args)
+	{
+		
+		System.out.println("press '1' for user login");
+		System.out.print("press '2' for user ragistration");
+		getresponse();
+		
+	}
+	public static void getresponse()
+	{
+		Scanner userinput = new Scanner(System.in);
+		int response = userinput.nextInt();
+		if(response==1)
+		{
+			System.out.println("somebody want login");
+		}
+		else if(response==2)
+		{
+			System.out.println("somebody want ragistered");
+		}
+		else 
+		{
+			System.out.println("please give valid input");
+			getresponse();
+		}
+	}
+
+}

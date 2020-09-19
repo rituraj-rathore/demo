@@ -1,0 +1,23 @@
+import java.sql.*;
+public class Jdbc 
+{
+
+	public static void main(String[] args) throws Exception
+	{ 
+		String url = "jdbc:mysql://localhost:3306//company";
+		String uname = "root";
+		String pass = "deepak";
+		String query = "select * FROM employee ;";
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con = DriverManager.getConnection("jdbc:mysql://lolalhost:3306//company",uname,pass);
+		Statement st = con.createStatement();
+		ResultSet rs = st.executeQuery(query);
+		rs.next();
+		String name = rs.getString(1);
+		System.out.println(name); 
+		
+	}
+	
+	
+
+}

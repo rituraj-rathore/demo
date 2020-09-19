@@ -1,0 +1,29 @@
+
+import java.util.Scanner;
+public class Ragistration extends Mtc
+{
+	public static void ragister()
+	{
+		Scanner userragister = new Scanner(System.in);
+		
+		System.out.print("type first name");
+		first_name [i] = userragister.nextLine();
+		System.out.print("type last name");
+		last_name [i]= userragister.nextLine();
+		System.out.print("type full address");
+		full_address [i]= userragister.nextLine();
+		System.out.print("type mobile number");
+		mobile_number [i]= userragister.nextInt();
+		System.out.print("type user id");
+		user_id [i]= userragister.nextLine();
+		System.out.print("type password");
+		pass_word [i]= userragister.nextLine();
+		
+		
+		
+		
+		
+		
+	}
+
+}

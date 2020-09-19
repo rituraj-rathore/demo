@@ -1,0 +1,38 @@
+package mahabali;
+
+import javax.swing.JLabel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+
+public class Ragistration_user extends Mahabali
+
+{
+	JTextField t1;
+	JTextField t2;
+	JTextField t3;
+	JTextField t4;
+	JRadioButton c1;
+	JRadioButton c2;
+	JTextField t5;
+	JLabel l1;
+	JLabel l2;
+	JLabel l3;
+	JLabel l4;
+	JLabel l5;
+	
+	
+	public Ragistration_user()
+	{
+		t1 = new JTextField(15);
+		t2 = new JTextField(15);
+		t3 = new JTextField(15);
+		t4 = new JTextField(15);
+		t5 = new JTextField(15);
+		l1 =new JLabel("name");
+		l2 =new JLabel("user id");
+		l3 =new JLabel("password");
+		l4 = new JLabel("full address");
+		l5 = new JLabel("mobile number");
+	}
+
+}

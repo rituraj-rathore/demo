@@ -1,0 +1,24 @@
+import java.awt.event.ActionListener;
+
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class LoginGui extends Mtc implements ActionListener
+
+{		JTextField t1;
+		JTextField t2;
+		JLabel l1;
+		JLabel l2;
+		JLabel l3;
+
+	public LoginGui()
+	
+	{
+		l1= new JLabel("User id");
+		t1= new JTextField(25);
+		l2= new JLabel("password");
+		t2 = new JTextField(25);
+		l3 = new JLabel("submit");
+	}
+	
+}

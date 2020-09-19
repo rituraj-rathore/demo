@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+
+public class Login {
+	public static void userlogin()
+	{ 
+		Scanner userresponse = new Scanner(System.in);
+		 String username ;
+		    String userid = "abc";
+		    int count1 = 0;
+		    int count2 = 0;
+		do
+		{
+			if(count1==0)
+			{
+			System.out.print("type userid ");
+			count1++;
+			}
+			else
+				System.out.print("please type valic userid");
+			username = userresponse.next();
+	   	}while(!(username.equals(userid)));
+		
+		/*do
+		{
+	    //System.out.println("type password");
+	    //String userpassword = userresponse.next();
+	    //String userpass = "pass";
+	    } while( !(true));
+*/
+		}
+
+}

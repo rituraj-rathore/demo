@@ -1,0 +1,53 @@
+package mahabali;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.*;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+
+public class Mahabali extends JFrame
+{
+
+	public static String query ;
+	static Statement st;
+	static ResultSet rs;
+	
+	
+	
+	public static void main(String[] args) throws Exception
+	{	
+		
+		
+		
+	//fetching_data(query);
+	Ragistration_user rakesh = new Ragistration_user();
+		
+
+	}
+	
+	static public void fetching_data(String s) throws Exception
+	{	String url = "jdbc:mysql://localhost/mahabali";
+		String uname = "root";
+		String pass = "deepak";
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		Connection con = DriverManager.getConnection(url,uname,pass);
+		
+		st = con.createStatement();
+		rs = st.executeQuery(s);
+		rs.next();
+		String name = rs.getString(3);
+		System.out.println(name); 
+		st.close();
+		rs.close();
+	}
+
+	
+	
+
+}
+

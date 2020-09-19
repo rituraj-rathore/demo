@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Mtc {
+
+	public static void main(String[] args) {
+		Scanner userinput = new Scanner(System.in);
+		System.out.println("press '1' for user login");
+		System.out.println("press '2' for user ragistration");
+		
+		int response = userinput.nextInt();
+
+	}
+
+}

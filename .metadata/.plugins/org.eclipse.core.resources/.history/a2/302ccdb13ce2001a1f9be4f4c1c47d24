@@ -1,0 +1,17 @@
+import javax.swing.JFrame;
+public class SwingDemo {
+
+	public static void main(String[] args) 
+	{
+	MtcWelcome wframe = new MtcWelcome();	
+	}
+
+}
+///////////////
+ class MtcWelcome extends JFrame
+    {
+	 public MtcWelcome()
+	 {
+		 
+	 }
+	}

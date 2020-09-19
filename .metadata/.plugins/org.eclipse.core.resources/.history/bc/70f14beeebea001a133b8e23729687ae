@@ -1,0 +1,63 @@
+package mahabali;
+
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class Login_Page extends Mahabali implements ActionListener
+{
+	JLabel l1;
+	JButton b1;
+	JButton b2;
+	JLabel l2;
+	JLabel l3;
+	JTextField t1;
+	JTextField t2;
+	
+	
+	
+	public Login_Page()
+	{
+		   l1= new JLabel("Welcome to login page");
+		    b1 = new JButton("go to home page");
+		    b2 = new JButton("submit");
+		    l2 =  new JLabel("userid");
+		    l3 = new JLabel("password");
+		    t1 = new JTextField(20);
+		    t2 = new JTextField(20);
+		    
+		    add(l1);
+		    add(b1);
+		    add(l2); add(t1);
+		    add(l3); add(t2);
+		    add(b2);
+		    b1.addActionListener(this);
+		    b2.addActionListener(this);
+		    
+		    
+			setLayout(new FlowLayout());
+			setVisible(true);
+			setSize(250,300);
+			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	
+	public void actionPerformed(ActionEvent ae)
+	{
+		if(ae.getSource()==b1)
+		{
+			gohome = new Home_Page();
+			setVisible(false);
+		} 
+		if(ae.getSource()==b2)
+		{
+			
+		
+		}
+	}
+	
+}
